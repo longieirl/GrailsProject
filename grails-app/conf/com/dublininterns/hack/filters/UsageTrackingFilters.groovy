@@ -28,9 +28,9 @@ class UsageTrackingFilters {
                     params << request.JSON
                 }
 
-                MCAuditUtil.setDateField(PopulatableField.REQUEST_DATE_TIME, new Date());
-                MCAuditUtil.setSourceMachine(getRemoteAddr(request) ?: "-", request.getRemotePort().toString())
-                MCAuditUtil.setDestMachine(request.getServerName() ?: "-", request.getServerPort().toString())
+                //setDateField(PopulatableField.REQUEST_DATE_TIME, new Date());
+                //setSourceMachine(getRemoteAddr(request) ?: "-", request.getRemotePort().toString())
+                //setDestMachine(request.getServerName() ?: "-", request.getServerPort().toString())
 
                 request.start = System.currentTimeMillis()
                 def requestId = MDC.get(LoggingFields.REQUEST_ID) ?: InetAddress.getLocalHost().getHostName() + ":" + requestCounter.decrementAndGet()

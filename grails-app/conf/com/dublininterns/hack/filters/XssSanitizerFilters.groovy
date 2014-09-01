@@ -1,5 +1,7 @@
 package com.dublininterns.hack.filters
 
+import com.dublininterns.hack.utils.XssSanitizerUtil
+
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
