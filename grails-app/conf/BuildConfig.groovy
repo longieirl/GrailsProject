@@ -27,9 +27,13 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
+        compile 'com.simplify:payments-sdk-java:1.1.2'
     }
 
     plugins {
+        compile ':heroku:1.0.1'
+        compile ':cloud-support:1.0.8'
+
         // plugins for the build system only
         build ":tomcat:7.0.53"
 
@@ -42,8 +46,11 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:3.6.10.15" // or ":hibernate4:4.3.5.2"
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
-        runtime ":resources:1.2.7"
+        //runtime ":resources:1.2.7"
+        //runtime ":angularjs-resources:1.2.22"
 
         compile ":codenarc:0.21"
+        compile ":asset-pipeline:1.6.1"
+
     }
 }

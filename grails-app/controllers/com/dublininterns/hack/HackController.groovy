@@ -7,6 +7,8 @@ class HackController {
 
     HackService hackService
 
+    static allowedMethods = [processPayment:'POST', checkout:['POST']]
+
     // Notes
     // 1. params are the request params in the body/URL. Understand HTTP request params
     // 2. This is a controller, understand the pattern MVC.
@@ -29,6 +31,15 @@ class HackController {
     // Only supports POST
     public JSON checkout() {
         log.info(">>checkout(), params=$params")
+
+        render ([msg: 'not yet implemented']) as JSON
+    }
+
+    // Only supports POST/GET
+    public JSON list() {
+        log.info(">>list(), params=$params")
+
+        log.info(">>list(), id=$params.id")
 
         render ([msg: 'not yet implemented']) as JSON
     }

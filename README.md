@@ -12,4 +12,7 @@ To view your domain model
 Integration Test
 - NotifyPaymentSpecification is the basic test to validate end-to-end testing
 
-Test Stuff
+Viewing Submit Page
+- http://localhost:8080/GrailsProject/landing/
+- This functionality shows the PRG pattern
+dev-note: http://greggigon.com/2012/04/25/post-redirect-get-pattern-with-grails/
