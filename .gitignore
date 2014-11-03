@@ -1,0 +1,13 @@
+logs
+*.pid
+*.seed
+build/release
+.grunt
+.DS_STORE
+/.project
+/.vagrant
+coverage
+/target
+/.idea
+*.log
+*.iml
